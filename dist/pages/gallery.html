@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the SmileCare photo gallery — clinic interiors, smile makeovers, dental technology, and team photographs.">
+  <title>Photo Gallery | SmileCare Dental Clinic, Chandigarh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="../bundle.css">
+</head>
+<body>
+
+  <header class="page-hero" aria-labelledby="page-title">
+    <div class="container">
+      <span class="eyebrow">Visual Tour</span>
+      <h1 id="page-title">Photo Gallery</h1>
+      <p>A visual tour of our clinic, treatments, smile results, and the team that makes it all possible.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Gallery</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── GALLERY ────────────────────────────────────────────────────────────── -->
+  <section class="section-light" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Browse</span>
+        <h2 id="gallery-heading">Our Gallery</h2>
+        <p>Use the filters to explore specific categories, then click any image to view it full size.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters" role="group" aria-label="Gallery filters">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All Photos</button>
+        <button class="filter-btn" data-filter="clinic" aria-pressed="false">Clinic</button>
+        <button class="filter-btn" data-filter="smiles" aria-pressed="false">Smile Makeovers</button>
+        <button class="filter-btn" data-filter="technology" aria-pressed="false">Technology</button>
+        <button class="filter-btn" data-filter="team" aria-pressed="false">Team</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="gallery-masonry" role="list" aria-label="Photo gallery">
+
+        <div class="gallery-item" data-cat="clinic" role="listitem" tabindex="0" aria-label="Modern reception area of SmileCare dental clinic">
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=450&q=80&auto=format&fit=crop"
+            alt="Bright, welcoming reception area of SmileCare Dental Clinic in Chandigarh"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="smiles" role="listitem" tabindex="0" aria-label="Before and after smile transformation case">
+          <img
+            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e58?w=600&h=500&q=80&auto=format&fit=crop"
+            alt="A patient with a beautifully transformed smile after cosmetic dental treatment at SmileCare"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="technology" role="listitem" tabindex="0" aria-label="State-of-the-art dental equipment">
+          <img
+            src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&h=450&q=80&auto=format&fit=crop"
+            alt="Cutting-edge digital dental equipment and diagnostics technology at SmileCare"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="team" role="listitem" tabindex="0" aria-label="SmileCare specialist doctor portrait">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Arjun Mehta, Founder and Chief Implantologist of SmileCare Dental Clinic"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="clinic" role="listitem" tabindex="0" aria-label="Modern dental treatment chair and room">
+          <img
+            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&h=450&q=80&auto=format&fit=crop"
+            alt="A spotless, modern dental treatment chair in one of SmileCare's procedure rooms"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="smiles" role="listitem" tabindex="0" aria-label="Happy patient after smile makeover">
+          <img
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=500&q=80&auto=format&fit=crop"
+            alt="A delighted patient showing off her stunning new smile after veneers at SmileCare"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="team" role="listitem" tabindex="0" aria-label="SmileCare female specialist doctor">
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=450&q=80&auto=format&fit=crop"
+            alt="Dr. Priya Sharma, Senior Cosmetic Dentist at SmileCare"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="technology" role="listitem" tabindex="0" aria-label="Dentist and patient consultation with digital screen">
+          <img
+            src="https://images.unsplash.com/photo-1581591524425-273691e699f0?w=600&h=500&q=80&auto=format&fit=crop"
+            alt="A SmileCare dentist discussing a digital X-ray with a patient during their consultation"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="smiles" role="listitem" tabindex="0" aria-label="Confident patient with bright smile">
+          <img
+            src="https://images.unsplash.com/photo-1598256990900-6c7d4ad5e0b0?w=600&h=450&q=80&auto=format&fit=crop"
+            alt="A confident woman with a natural-looking bright smile after her SmileCare treatment"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="team" role="listitem" tabindex="0" aria-label="SmileCare male doctor portrait">
+          <img
+            src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Rohit Bhatia, Consultant Orthodontist at SmileCare Chandigarh"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="clinic" role="listitem" tabindex="0" aria-label="Clinic corridor and treatment suites">
+          <img
+            src="https://images.unsplash.com/photo-1609840113941-e8d78b7e7cb9?w=600&h=450&q=80&auto=format&fit=crop"
+            alt="The pristine clinical corridor linking the treatment suites at SmileCare Chandigarh"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-cat="team" role="listitem" tabindex="0" aria-label="SmileCare specialist female doctor smiling">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Kavita Nair, Specialist Paediatric Dentist at SmileCare"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+
+      </div><!-- /gallery-masonry -->
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+        <button class="lightbox-prev" aria-label="Previous image">‹</button>
+        <img class="lightbox-img" src="" alt="" loading="lazy">
+        <button class="lightbox-next" aria-label="Next image">›</button>
+        <div class="lightbox-caption" aria-live="polite"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────────────────────── -->
+  <section class="cta-strip" aria-labelledby="gallery-cta">
+    <div class="container">
+      <h2 id="gallery-cta" class="reveal">Inspired by What You See?</h2>
+      <p class="reveal">Your transformation could be next. Book a free consultation to discuss your goals with one of our specialists.</p>
+      <div class="btn-group reveal">
+        <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic%2C%20Chandigarh.%20Please%20let%20me%20know%20available%20slots.%20Thank%20you!" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Book Free Consultation</a>
+        <a href="smile.html" class="btn btn-outline-white btn-lg">View Smile Cases</a>
+      </div>
+    </div>
+  </section>
+
+        <script src="../bundle.js"></script>
+</body>
+</html>

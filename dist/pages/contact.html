@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact SmileCare Dental Clinic Chandigarh — book an appointment via WhatsApp, find our address and hours, or reach us by phone or email.">
+  <title>Contact &amp; Appointments | SmileCare Dental Clinic, Chandigarh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+                    <style>
+    /* ── WhatsApp Booking Panel ─────────────────────── */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+      padding: 72px 0;
+    }
+    @media (max-width: 820px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+    }
+
+    /* Info card */
+    .contact-info-card {
+      background: var(--clr-surface, #fff);
+      border: 1px solid var(--clr-border, #e8ede9);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .contact-info-card h2 {
+      font-family: var(--font-display, 'Playfair Display', serif);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--clr-dark, #1a2e2b);
+      margin-bottom: 10px;
+    }
+    .contact-info-card > p {
+      color: var(--clr-gray-500, #6b7280);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .contact-detail {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+    .contact-detail-icon {
+      width: 42px; height: 42px;
+      background: var(--clr-primary-light, #e6f4f1);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+    .contact-detail-text strong {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--clr-dark, #1a2e2b);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .contact-detail-text span,
+    .contact-detail-text a {
+      font-size: 0.92rem;
+      color: var(--clr-gray-500, #6b7280);
+      line-height: 1.55;
+      text-decoration: none;
+    }
+    .contact-detail-text a:hover { color: var(--clr-primary, #0d6e5e); }
+
+    .map-placeholder {
+      margin-top: 28px;
+      background: linear-gradient(135deg, #e6f4f1, #c8e8df);
+      border-radius: 14px;
+      height: 200px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: var(--clr-primary, #0d6e5e);
+      font-weight: 600;
+      font-size: 0.95rem;
+      gap: 8px;
+      border: 1px solid rgba(13,110,94,.15);
+    }
+    .map-placeholder .map-pin { font-size: 2rem; }
+
+    /* ── WhatsApp booking card ─────────────── */
+    .wa-card {
+      background: #fff;
+      border: 1px solid #e8ede9;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 40px rgba(13,110,94,.08);
+    }
+    .wa-card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .wa-logo {
+      width: 52px; height: 52px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(37,211,102,.35);
+    }
+    .wa-logo svg { width: 28px; height: 28px; fill: #fff; }
+    .wa-card-header h2 {
+      font-family: var(--font-display, 'Playfair Display', serif);
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      color: var(--clr-dark, #1a2e2b);
+      line-height: 1.2;
+    }
+    .wa-card > .wa-subtitle {
+      color: #6b7280;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    /* Treatment quick-select */
+    .wa-treatments {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .wa-treatment-btn {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 14px;
+      border: 1.5px solid #dde8e4;
+      border-radius: 10px;
+      font-size: 0.87rem;
+      font-weight: 600;
+      color: #1a2e2b;
+      cursor: pointer;
+      background: #fafaf8;
+      transition: all 0.22s;
+      font-family: inherit;
+      text-align: left;
+    }
+    .wa-treatment-btn .wt-icon { font-size: 1.15rem; flex-shrink: 0; }
+    .wa-treatment-btn:hover,
+    .wa-treatment-btn.selected {
+      border-color: #0d6e5e;
+      background: #e6f4f1;
+      color: #0d6e5e;
+    }
+
+    .wa-divider {
+      display: flex; align-items: center; gap: 12px;
+      color: #adb5b2; font-size: 0.82rem;
+      margin: 24px 0;
+    }
+    .wa-divider::before, .wa-divider::after {
+      content: ''; flex: 1; height: 1px; background: #e8ede9;
+    }
+
+    /* Main WhatsApp CTA */
+    .wa-cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 17px 28px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+    }
+    .wa-cta-btn:hover {
+      background: #1db954;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37,211,102,.5);
+    }
+    .wa-cta-btn svg { width: 24px; height: 24px; fill: #fff; flex-shrink: 0; }
+
+    .wa-note {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #adb5b2;
+    }
+    .wa-note strong { color: #6b7280; }
+
+    /* Direct-call strip under card */
+    .wa-alt-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .wa-alt-btn {
+      flex: 1;
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border: 1.5px solid #dde8e4;
+      border-radius: 10px;
+      font-size: 0.87rem;
+      font-weight: 600;
+      color: #1a2e2b;
+      text-decoration: none;
+      transition: all 0.22s;
+      background: #fff;
+    }
+    .wa-alt-btn:hover {
+      border-color: #0d6e5e;
+      color: #0d6e5e;
+      background: #e6f4f1;
+    }
+
+    /* How it works */
+    .how-steps {
+      display: flex;
+      gap: 0;
+      counter-reset: step;
+      margin-top: 52px;
+    }
+    .how-step {
+      flex: 1;
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+    }
+    .how-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 22px; right: 0;
+      width: 50%; height: 2px;
+      background: linear-gradient(to right, #25d366, #e8ede9);
+    }
+    .how-step:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      top: 22px; left: 0;
+      width: 50%; height: 2px;
+      background: linear-gradient(to right, #e8ede9, #25d366);
+    }
+    .step-num {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: #0d6e5e;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px;
+      position: relative; z-index: 1;
+    }
+    .how-step h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #1a2e2b;
+      margin-bottom: 6px;
+    }
+    .how-step p {
+      font-size: 0.8rem;
+      color: #6b7280;
+      line-height: 1.55;
+    }
+    @media (max-width: 600px) {
+      .how-steps { flex-direction: column; gap: 20px; }
+      .how-step::after, .how-step::before { display: none; }
+      .wa-treatments { grid-template-columns: 1fr; }
+      .wa-alt-actions { flex-direction: column; }
+    }
+  </style>
+  <link rel="stylesheet" href="../bundle.css">
+</head>
+<body>
+
+  <header class="page-hero" aria-labelledby="page-title">
+    <div class="container">
+      <span class="eyebrow">Book an Appointment</span>
+      <h1 id="page-title">Contact Us via WhatsApp</h1>
+      <p>The fastest way to book — message us on WhatsApp and we'll confirm your slot within 2 hours.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section-light" aria-label="Contact and booking">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- ── LEFT: Clinic Info ── -->
+        <div class="contact-info-card reveal">
+          <h2>Visit SmileCare</h2>
+          <p>We're conveniently located in Sector 22, just minutes from PGI and accessible from across the tricity area. Walk-ins welcome during clinic hours.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">📍</div>
+            <div class="contact-detail-text">
+              <strong>Address</strong>
+              <span>47 Sector 22, Near PGI,<br>Chandigarh – 160 022, India</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">📞</div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">✉️</div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <a href="mailto:hello@smilecare.in">hello@smilecare.in</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Opening Hours</strong>
+              <span>Monday – Saturday: 9:00am – 7:00pm<br>Sunday: 10:00am – 2:00pm<br>Emergency slots available daily</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">💬</div>
+            <div class="contact-detail-text">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare." target="_blank" rel="noopener">Chat with us directly →</a>
+            </div>
+          </div>
+
+          <div class="map-placeholder" role="img" aria-label="Clinic location map placeholder">
+            <span class="map-pin">📍</span>
+            <span>47 Sector 22, Near PGI, Chandigarh</span>
+          </div>
+        </div>
+
+        <!-- ── RIGHT: WhatsApp Booking Panel ── -->
+        <div class="wa-card reveal">
+          <div class="wa-card-header">
+            <div class="wa-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <h2>Book via WhatsApp</h2>
+          </div>
+
+          <p class="wa-subtitle">Select your treatment below — it pre-fills your WhatsApp message so our team knows exactly how to help you.</p>
+
+          <!-- Treatment quick-select -->
+          <div class="wa-treatments" id="waTreatments" role="group" aria-label="Select treatment for booking">
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Teeth Whitening* appointment at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">✨</span> Teeth Whitening
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Dental Implants* consultation at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">🦷</span> Dental Implants
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Braces / Clear Aligners* consultation at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">😁</span> Braces & Aligners
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Porcelain Veneers* consultation at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">💎</span> Veneers
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Root Canal Treatment* appointment at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">🩺</span> Root Canal
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Laser Dentistry* consultation at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">🔬</span> Laser Treatment
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Child's Dental Appointment* at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">🧸</span> Pediatric / Child
+            </button>
+            <button class="wa-treatment-btn" data-msg="Hello! I'd like to book a *Routine Check-Up & Cleaning* at SmileCare Dental Clinic, Chandigarh. Please let me know available slots. Thank you!">
+              <span class="wt-icon">🛡️</span> Check-Up & Clean
+            </button>
+          </div>
+
+          <div class="wa-divider">or send a general message</div>
+
+          <!-- Main CTA -->
+          <a
+            href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic%2C%20Chandigarh.%20Please%20let%20me%20know%20available%20slots.%20Thank%20you!"
+            class="wa-cta-btn"
+            id="waMainBtn"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open WhatsApp to book an appointment"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Open WhatsApp & Book Now
+          </a>
+
+          <p class="wa-note">
+            <strong>Replies within 2 hours</strong> · Mon–Sat 9am–7pm · Sun 10am–2pm
+          </p>
+
+          <!-- Alt actions -->
+          <div class="wa-alt-actions">
+            <a href="tel:+919876543210" class="wa-alt-btn" aria-label="Call us directly">
+              📞 Call Us Directly
+            </a>
+            <a href="mailto:hello@smilecare.in" class="wa-alt-btn" aria-label="Send an email">
+              ✉️ Send an Email
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /contact-layout -->
+
+      <!-- How it works -->
+      <div style="text-align:center; margin-top:16px; margin-bottom:20px;">
+        <span class="eyebrow">Simple 3-Step Process</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);color:var(--clr-dark);margin-top:8px;">How Booking Works</h2>
+      </div>
+      <div class="how-steps reveal">
+        <div class="how-step">
+          <div class="step-num">1</div>
+          <h4>Pick Your Treatment</h4>
+          <p>Select the service you need from the quick-select buttons above — or just tap "Open WhatsApp".</p>
+        </div>
+        <div class="how-step">
+          <div class="step-num">2</div>
+          <h4>Send the Message</h4>
+          <p>WhatsApp opens with a pre-filled message. Hit send — it takes 5 seconds.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-num">3</div>
+          <h4>We Confirm Your Slot</h4>
+          <p>Our team replies within 2 hours to confirm your appointment date and time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency strip -->
+  <section style="background:var(--clr-primary,#0d6e5e); padding:60px 0;" aria-labelledby="emergency-heading">
+    <div class="container" style="text-align:center;">
+      <h2 id="emergency-heading" style="color:white;font-size:clamp(1.4rem,3vw,2rem);margin-bottom:10px;">Dental Emergency? Don't Wait.</h2>
+      <p style="color:rgba(255,255,255,0.8);margin-bottom:28px;">Severe pain, knocked-out tooth, or broken crown — call us now and we'll see you the same day.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:+919876543210" class="btn btn-accent btn-lg">📞 Call Now: +91 98765 43210</a>
+        <a href="https://wa.me/919876543210?text=EMERGENCY%3A%20I%20need%20urgent%20dental%20help%20at%20SmileCare%20Chandigarh." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:#25d366;color:#fff;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">💬 WhatsApp Emergency</a>
+      </div>
+    </div>
+  </section>
+
+          <script>
+    // Treatment quick-select → update main WhatsApp button href
+    var mainBtn = document.getElementById('waMainBtn');
+    var WA_NUM  = '919876543210';
+
+    document.querySelectorAll('.wa-treatment-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.wa-treatment-btn').forEach(function(b){ b.classList.remove('selected'); });
+        btn.classList.add('selected');
+        var msg = btn.dataset.msg;
+        mainBtn.href = 'https://wa.me/' + WA_NUM + '?text=' + encodeURIComponent(msg);
+        mainBtn.textContent = '';
+        // rebuild button content (icon + text)
+        var svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+        svg.setAttribute('viewBox','0 0 24 24');
+        svg.setAttribute('width','24'); svg.setAttribute('height','24');
+        svg.style.fill='#fff'; svg.style.flexShrink='0';
+        svg.innerHTML='<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>';
+        mainBtn.appendChild(svg);
+        mainBtn.appendChild(document.createTextNode(' Open WhatsApp & Book Now'));
+      });
+    });
+  </script>
+<script src="../bundle.js"></script>
+</body>
+</html>

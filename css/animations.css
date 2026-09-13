@@ -1,0 +1,169 @@
+/* ── Scroll Reveal ──────────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1),
+              transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for children */
+.stagger > * { opacity: 0; transform: translateY(28px); }
+.stagger > *.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1),
+              transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.stagger > *:nth-child(1)  { transition-delay: 0ms; }
+.stagger > *:nth-child(2)  { transition-delay: 80ms; }
+.stagger > *:nth-child(3)  { transition-delay: 160ms; }
+.stagger > *:nth-child(4)  { transition-delay: 240ms; }
+.stagger > *:nth-child(5)  { transition-delay: 320ms; }
+.stagger > *:nth-child(6)  { transition-delay: 400ms; }
+.stagger > *:nth-child(7)  { transition-delay: 480ms; }
+.stagger > *:nth-child(8)  { transition-delay: 560ms; }
+
+/* ── WhatsApp Pulse ─────────────────────────────────────────────────────────── */
+@keyframes wa-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
+  70%  { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+.whatsapp-float {
+  animation: wa-pulse 2.5s ease-out infinite;
+}
+
+/* ── Shake (form validation error) ─────────────────────────────────────────── */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15%       { transform: translateX(-8px); }
+  30%       { transform: translateX(8px); }
+  45%       { transform: translateX(-6px); }
+  60%       { transform: translateX(6px); }
+  75%       { transform: translateX(-4px); }
+  90%       { transform: translateX(4px); }
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(0.36,0.07,0.19,0.97);
+}
+
+/* ── Hero Text Animations ───────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-eyebrow    { animation: fadeInUp 0.7s 0.1s both cubic-bezier(0.4,0,0.2,1); }
+.hero-title      { animation: fadeInUp 0.7s 0.25s both cubic-bezier(0.4,0,0.2,1); }
+.hero-description{ animation: fadeInUp 0.7s 0.4s both cubic-bezier(0.4,0,0.2,1); }
+.hero-actions    { animation: fadeInUp 0.7s 0.55s both cubic-bezier(0.4,0,0.2,1); }
+.hero-stats      { animation: fadeInUp 0.7s 0.7s both cubic-bezier(0.4,0,0.2,1); }
+
+.hero-image-wrapper {
+  animation: fadeInUp 0.9s 0.3s both cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── Float badge animation ─────────────────────────────────────────────────── */
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+.hero-badge-float.badge-top    { animation: floatBadge 4s ease-in-out infinite; }
+.hero-badge-float.badge-bottom { animation: floatBadge 4s 2s ease-in-out infinite; }
+
+/* ── Page transition (inner pages) ─────────────────────────────────────────── */
+.page-hero h1 {
+  animation: fadeInUp 0.7s 0.2s both;
+}
+.page-hero p {
+  animation: fadeInUp 0.7s 0.35s both;
+}
+.page-hero .breadcrumb {
+  animation: fadeInUp 0.7s 0.5s both;
+}
+
+/* ── Nav link underline ─────────────────────────────────────────────────────── */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--clr-primary);
+  border-radius: 2px;
+  transition: width var(--transition);
+}
+
+.nav-link:hover::after { width: 60%; }
+
+/* ── Scroll to top button ───────────────────────────────────────────────────── */
+.scroll-top {
+  position: fixed;
+  bottom: calc(var(--sp-6) + 68px);
+  right: var(--sp-6);
+  width: 42px;
+  height: 42px;
+  background: var(--clr-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 990;
+  border: none;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--transition), transform var(--transition);
+  box-shadow: var(--shadow-md);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: var(--clr-primary-dk);
+  transform: translateY(-2px);
+}
+
+/* ── Lightbox fade ──────────────────────────────────────────────────────────── */
+@keyframes lightboxFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.lightbox.open .lightbox-img {
+  animation: lightboxFadeIn 0.3s ease;
+}
+
+/* ── Counter odometer effect ────────────────────────────────────────────────── */
+.stat-number {
+  display: inline-block;
+}
+
+/* ── Gradient text (hero highlight) ────────────────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, var(--clr-accent) 0%, #f5c842 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

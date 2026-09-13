@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmileCare Dental Clinic – Premium dental care in Chandigarh. NABH certified. Implants, veneers, whitening, braces, laser dentistry and more. Book your appointment today.">
+  <title>SmileCare Dental Clinic | Premium Dental Care, Chandigarh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="bundle.css">
+</head>
+<body>
+
+  <!-- Navbar injected by layout.js — but homepage has its own since it is transparent on hero -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="SmileCare Dental Clinic - Home">
+        <div class="nav-logo-icon" aria-hidden="true">🦷</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">SmileCare</span>
+          <span class="nav-logo-sub">Dental Clinic</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li class="nav-item">
+          <a href="pages/about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/treatments.html" class="nav-link" aria-haspopup="true">
+            Treatments
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown" role="list">
+            <li><a href="pages/treatments.html#whitening">Teeth Whitening</a></li>
+            <li><a href="pages/treatments.html#implants">Dental Implants</a></li>
+            <li><a href="pages/treatments.html#braces">Braces &amp; Aligners</a></li>
+            <li><a href="pages/treatments.html#veneers">Veneers</a></li>
+            <li><a href="pages/treatments.html#rootcanal">Root Canal</a></li>
+            <li><a href="pages/treatments.html#laser">Laser Dentistry</a></li>
+            <li><a href="pages/treatments.html#pediatric">Pediatric Dental</a></li>
+            <li><a href="pages/treatments.html#preventive">Preventive Care</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="pages/team.html" class="nav-link">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/smile.html" class="nav-link" aria-haspopup="true">
+            Results
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown" role="list">
+            <li><a href="pages/smile.html">Smile Transformations</a></li>
+            <li><a href="pages/gallery.html">Photo Gallery</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="pages/blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/dental-tourism.html" class="nav-link">Dental Tourism</a>
+        </li>
+      </ul>
+
+      <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic." target="_blank" rel="noopener" class="btn btn-primary nav-cta">Book Appointment</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <p class="mobile-section-title">Navigation</p>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About Us</a>
+    <p class="mobile-section-title">Treatments</p>
+    <a href="pages/treatments.html#whitening">Teeth Whitening</a>
+    <a href="pages/treatments.html#implants">Dental Implants</a>
+    <a href="pages/treatments.html#braces">Braces &amp; Aligners</a>
+    <a href="pages/treatments.html#veneers">Veneers</a>
+    <a href="pages/treatments.html#rootcanal">Root Canal</a>
+    <a href="pages/treatments.html#laser">Laser Dentistry</a>
+    <a href="pages/treatments.html#pediatric">Pediatric Dental</a>
+    <a href="pages/treatments.html#preventive">Preventive Care</a>
+    <p class="mobile-section-title">More</p>
+    <a href="pages/team.html">Our Team</a>
+    <a href="pages/smile.html">Smile Transformations</a>
+    <a href="pages/gallery.html">Photo Gallery</a>
+    <a href="pages/blog.html">Blog</a>
+    <a href="pages/dental-tourism.html">Dental Tourism</a>
+    <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic." target="_blank" rel="noopener" class="btn btn-primary">Book Appointment</a>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Hero section">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+          NABH Certified · Est. 2003 · Chandigarh
+        </div>
+
+        <h1 class="hero-title">
+          Your Perfect Smile
+          <span class="highlight text-gradient">Starts Here</span>
+        </h1>
+
+        <p class="hero-description">
+          World-class dental care delivered with precision technology and genuine compassion. From routine check-ups to complete smile makeovers — we're with you every step.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic." target="_blank" rel="noopener" class="btn btn-accent btn-lg">Book Free Consultation</a>
+          <a href="pages/smile.html" class="btn btn-outline-white btn-lg">See Transformations</a>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div class="stat-badge" role="listitem">
+            <div class="stat-badge-icon" aria-hidden="true">✓</div>
+            <span><strong>NABH</strong> Certified</span>
+          </div>
+          <div class="stat-badge" role="listitem">
+            <div class="stat-badge-icon" aria-hidden="true">🏆</div>
+            <span><strong>20+</strong> Years</span>
+          </div>
+          <div class="stat-badge" role="listitem">
+            <div class="stat-badge-icon" aria-hidden="true">👥</div>
+            <span><strong>15K+</strong> Patients</span>
+          </div>
+          <div class="stat-badge" role="listitem">
+            <div class="stat-badge-icon" aria-hidden="true">⭐</div>
+            <span><strong>4.9</strong> Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img
+          class="hero-img"
+          src="..\images\home-page-doctor.png"
+          alt="Friendly dentist examining a patient's teeth at SmileCare Dental Clinic, Chandigarh"
+          loading="eager"
+        >
+
+        <div class="hero-badge-float badge-top" aria-hidden="true">
+          <div class="badge-icon">🏅</div>
+          <div class="badge-text">
+            <strong>NABH Accredited</strong>
+            <span>Quality Assured</span>
+          </div>
+        </div>
+
+        <div class="hero-badge-float badge-bottom" aria-hidden="true">
+          <div class="badge-icon">⭐</div>
+          <div class="badge-text">
+            <strong>4.9 / 5 Stars</strong>
+            <span>1,200+ Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST BAR ──────────────────────────────────────────────────────────── -->
+  <div class="trust-bar" aria-label="Our specialities">
+    <div class="trust-bar-track" aria-hidden="true">
+      <!-- Duplicated for seamless loop -->
+      <span class="trust-item"><span class="trust-item-icon">🔬</span> Laser Dentistry</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">🔍</span> Micro Dentistry</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">📡</span> Digital OPG</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">✅</span> NABH Certified</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">🏠</span> Home Visits</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">💉</span> Conscious Sedation</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">🚨</span> Emergency Care</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">♿</span> Wheelchair Access</span>
+      <span class="trust-dot"></span>
+      <!-- Repeat for marquee -->
+      <span class="trust-item"><span class="trust-item-icon">🔬</span> Laser Dentistry</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">🔍</span> Micro Dentistry</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">📡</span> Digital OPG</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">✅</span> NABH Certified</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">🏠</span> Home Visits</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">💉</span> Conscious Sedation</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">🚨</span> Emergency Care</span>
+      <span class="trust-dot"></span>
+      <span class="trust-item"><span class="trust-item-icon">♿</span> Wheelchair Access</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────────────────────── -->
+  <section class="section-light" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <img
+            class="about-img"
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=520&q=80&auto=format&fit=crop"
+            alt="The modern, welcoming interior of SmileCare Dental Clinic in Chandigarh's Sector 22"
+            loading="lazy"
+          >
+          <div class="about-experience-badge" aria-hidden="true">
+            <strong>20+</strong>
+            <span>Years of<br>Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="eyebrow">Our Story</span>
+          <h2 id="about-heading">Chandigarh's Most Trusted Dental Clinic Since 2003</h2>
+          <p>Founded by Dr. Arjun Mehta, SmileCare began with a simple conviction: that every person deserves exceptional dental care delivered in a warm, anxiety-free environment. Two decades on, that commitment drives everything we do.</p>
+          <p>From our state-of-the-art clinic in Sector 22, our team of 20+ specialists serves patients from across India and abroad — combining the latest in digital dentistry with a deeply personal approach to care.</p>
+
+          <ul class="checklist" aria-label="Our key strengths">
+            <li>NABH-accredited facility with the highest safety standards</li>
+            <li>Digital OPG and 3D CBCT for precision diagnostics</li>
+            <li>Painless dentistry with conscious sedation options</li>
+            <li>Transparent pricing with no hidden costs, ever</li>
+            <li>EMI options and corporate tie-ups available</li>
+          </ul>
+
+          <a href="pages/about.html" class="btn btn-primary">Learn Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY CHOOSE US ─────────────────────────────────────────────────────── -->
+  <section class="section-navy" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Why SmileCare</span>
+        <h2 id="why-heading">The SmileCare Difference</h2>
+        <p>Six reasons thousands of patients choose us — and keep coming back.</p>
+      </div>
+
+      <div class="why-grid stagger">
+        <div class="why-card">
+          <div class="why-icon" aria-hidden="true">🏥</div>
+          <h3>NABH Certified Facility</h3>
+          <p>Our clinic meets the highest accreditation standards in India, ensuring every procedure follows protocols that put your safety first.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" aria-hidden="true">💡</div>
+          <h3>Advanced Technology</h3>
+          <p>Digital X-rays, 3D cone-beam CT, intraoral cameras, and CAD/CAM same-day crowns — we invest in technology so your treatment is faster and more accurate.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" aria-hidden="true">👨‍⚕️</div>
+          <h3>Specialist Experts</h3>
+          <p>Every treatment is handled by a specialist in that field — orthodontists, periodontists, endodontists, and cosmetic dentists — not a generalist doing everything.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" aria-hidden="true">💰</div>
+          <h3>Honest, Transparent Pricing</h3>
+          <p>We provide detailed treatment plans with clear costs before we begin. No surprise bills, no upselling — just honest advice and fair pricing.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" aria-hidden="true">😌</div>
+          <h3>Anxiety-Free Experience</h3>
+          <p>From noise-cancelling headphones to conscious sedation options, we've designed every aspect of your visit to feel calm, comfortable, and stress-free.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" aria-hidden="true">🌙</div>
+          <h3>Extended Hours &amp; Emergency Care</h3>
+          <p>Open Monday–Saturday 9am–7pm and Sunday 10am–2pm. Emergency same-day appointments available — because dental pain doesn't keep office hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TREATMENTS ────────────────────────────────────────────────────────── -->
+  <section class="section-light" aria-labelledby="treatments-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">What We Offer</span>
+        <h2 id="treatments-heading">Our Treatments</h2>
+        <p>Comprehensive dental care under one roof — from preventive hygiene to complete smile makeovers.</p>
+      </div>
+
+      <div class="treatments-grid stagger">
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">✨</div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional in-chair whitening that brightens your smile by up to 8 shades in a single visit.</p>
+          <a href="pages/treatments.html#whitening" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card featured">
+          <div class="treatment-icon" aria-hidden="true">🦷</div>
+          <h3>Dental Implants</h3>
+          <p>The gold standard for replacing missing teeth — permanent, natural-looking, and bone-preserving.</p>
+          <a href="pages/treatments.html#implants" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">😁</div>
+          <h3>Braces &amp; Aligners</h3>
+          <p>Straighten your smile discreetly with clear aligners or traditional braces, guided by our orthodontic specialist.</p>
+          <a href="pages/treatments.html#braces" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">💎</div>
+          <h3>Porcelain Veneers</h3>
+          <p>Ultra-thin shells bonded to the front of your teeth to perfect shape, colour, and alignment instantly.</p>
+          <a href="pages/treatments.html#veneers" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">🩺</div>
+          <h3>Root Canal</h3>
+          <p>Gentle, painless root canal treatment that saves your natural tooth and eliminates infection for good.</p>
+          <a href="pages/treatments.html#rootcanal" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">🔬</div>
+          <h3>Laser Dentistry</h3>
+          <p>Minimally invasive laser treatments for gum reshaping, cavity removal, and soft-tissue procedures.</p>
+          <a href="pages/treatments.html#laser" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">🧸</div>
+          <h3>Pediatric Dental</h3>
+          <p>A gentle, child-friendly environment that builds lifelong healthy habits from the very first visit.</p>
+          <a href="pages/treatments.html#pediatric" class="treatment-link">Learn more →</a>
+        </article>
+
+        <article class="treatment-card">
+          <div class="treatment-icon" aria-hidden="true">🛡️</div>
+          <h3>Preventive Care</h3>
+          <p>Regular cleanings, fluoride treatments, and oral health screenings to keep problems from ever starting.</p>
+          <a href="pages/treatments.html#preventive" class="treatment-link">Learn more →</a>
+        </article>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="pages/treatments.html" class="btn btn-outline">View All Treatments</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DIFFERENTIATORS ───────────────────────────────────────────────────── -->
+  <section class="section-teal" aria-labelledby="diff-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Capabilities</span>
+        <h2 id="diff-heading">A Clinic Built for Every Need</h2>
+        <p>Modern facilities and thoughtful amenities designed around your comfort and convenience.</p>
+      </div>
+
+      <div class="diff-grid stagger">
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">📡</div>
+          <h3>Digital OPG X-Ray</h3>
+          <p>Full mouth panoramic imaging with 90% less radiation than conventional X-rays.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">🖥️</div>
+          <h3>3D CBCT Scanning</h3>
+          <p>Three-dimensional jaw imaging for precise implant and orthodontic planning.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">⚡</div>
+          <h3>Same-Day Crowns</h3>
+          <p>CEREC CAD/CAM technology lets us mill and fit your crown in a single appointment.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">🏠</div>
+          <h3>Home Visit Service</h3>
+          <p>Dental care at home for patients who are elderly, differently abled, or anxious.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">💉</div>
+          <h3>IV Sedation Available</h3>
+          <p>Safe conscious sedation for anxious patients and complex multi-procedure sessions.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">🌏</div>
+          <h3>International Patients</h3>
+          <p>Dedicated dental tourism coordinator with airport pick-up and hotel tie-ups.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">💳</div>
+          <h3>Easy EMI Options</h3>
+          <p>Zero-cost EMI on all major credit cards and dedicated medical financing partners.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" aria-hidden="true">♿</div>
+          <h3>Fully Accessible</h3>
+          <p>Wheelchair ramps, lifts, and accessible treatment chairs to welcome every patient.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM PREVIEW ──────────────────────────────────────────────────────── -->
+  <section class="section-light" aria-labelledby="team-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Meet the Experts</span>
+        <h2 id="team-heading">Our Specialist Doctors</h2>
+        <p>20+ experienced dental specialists dedicated to your health, comfort, and confidence.</p>
+      </div>
+
+      <div class="team-grid stagger">
+        <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Arjun Mehta, Founder and Chief Implantologist at SmileCare Dental Clinic"
+            loading="lazy"
+          >
+          <div class="doctor-info">
+            <h3>Dr. Arjun Mehta</h3>
+            <p class="role">Founder &amp; Chief Implantologist</p>
+            <p class="qual">MDS – Oral Surgery · 20+ yrs exp.</p>
+          </div>
+        </article>
+
+        <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Priya Sharma, Senior Cosmetic Dentist and Veneer Specialist at SmileCare"
+            loading="lazy"
+          >
+          <div class="doctor-info">
+            <h3>Dr. Priya Sharma</h3>
+            <p class="role">Senior Cosmetic Dentist</p>
+            <p class="qual">MDS – Prosthodontics · 15 yrs exp.</p>
+          </div>
+        </article>
+
+        <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Rohit Bhatia, Orthodontist specialising in Invisalign and clear aligners at SmileCare"
+            loading="lazy"
+          >
+          <div class="doctor-info">
+            <h3>Dr. Rohit Bhatia</h3>
+            <p class="role">Orthodontist</p>
+            <p class="qual">MDS – Orthodontics · 12 yrs exp.</p>
+          </div>
+        </article>
+
+        <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=500&q=80&auto=format&fit=crop"
+            alt="Dr. Kavita Nair, Paediatric Dentist and child dental care specialist at SmileCare"
+            loading="lazy"
+          >
+          <div class="doctor-info">
+            <h3>Dr. Kavita Nair</h3>
+            <p class="role">Paediatric Dentist</p>
+            <p class="qual">MDS – Pedodontics · 10 yrs exp.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="pages/team.html" class="btn btn-outline">Meet All Doctors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS BANNER ──────────────────────────────────────────────────────── -->
+  <section class="stats-banner" aria-label="SmileCare statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%" aria-label="100% patient satisfaction">0%</div>
+          <p class="stat-label">Patient Satisfaction</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%" aria-label="100% happy staff">0%</div>
+          <p class="stat-label">Happy Staff</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="20" data-suffix="+" aria-label="20+ specialist doctors">0+</div>
+          <p class="stat-label">Specialist Doctors</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="15000" data-suffix="+" aria-label="15,000+ patients served">0+</div>
+          <p class="stat-label">Patients Served</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────────────────── -->
+  <section class="section-light" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Patient Stories</span>
+        <h2 id="testimonials-heading">What Our Patients Say</h2>
+        <p>Real experiences from real patients who trusted us with their smiles.</p>
+      </div>
+
+      <div class="testimonials-grid stagger">
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">"I was terrified of dentists. Dr. Mehta's team made me feel so calm throughout my implant procedure. The results are life-changing — I finally smile in photos again."</p>
+          <div class="testimonial-author">
+            <img
+              src="https://images.unsplash.com/photo-1581591524425-273691e699f0?w=400&h=300&q=80&auto=format&fit=crop"
+              alt="Anjali Kapoor, smiling patient at SmileCare Dental Clinic"
+              loading="lazy"
+              class="author-avatar"
+            >
+            <div>
+              <p class="author-name">Anjali Kapoor</p>
+              <p class="author-loc">Chandigarh</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card featured">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">"The before-and-after is honestly unbelievable. My veneers look completely natural — my family thought I'd had the photos edited. Dr. Priya is an absolute artist."</p>
+          <div class="testimonial-author">
+            <img
+              src="https://images.unsplash.com/photo-1598256990900-6c7d4ad5e0b0?w=400&h=300&q=80&auto=format&fit=crop"
+              alt="Meera Patel, happy patient who received veneers at SmileCare"
+              loading="lazy"
+              class="author-avatar"
+            >
+            <div>
+              <p class="author-name">Meera Patel</p>
+              <p class="author-loc">Delhi</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">"Flew in from London for full-mouth reconstruction. SmileCare handled everything — picked me up, arranged accommodation, and the care was better than anything back home."</p>
+          <div class="testimonial-author">
+            <img
+              src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&h=300&q=80&auto=format&fit=crop"
+              alt="Rajan Singh, international dental tourism patient at SmileCare"
+              loading="lazy"
+              class="author-avatar"
+            >
+            <div>
+              <p class="author-name">Rajan Singh</p>
+              <p class="author-loc">London, UK</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA STRIP ──────────────────────────────────────────────────────────── -->
+  <section class="cta-strip" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading" class="reveal">Ready for Your Best Smile?</h2>
+      <p class="reveal">Book a free consultation with one of our specialists today. No obligation, no pressure — just expert advice and a personalised treatment plan.</p>
+      <div class="btn-group reveal">
+        <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic." target="_blank" rel="noopener" class="btn btn-accent btn-lg">Book Free Consultation</a>
+        <a href="tel:+919876543210" class="btn btn-outline-white btn-lg">📞 Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="SmileCare Home">
+            <div class="nav-logo-icon" aria-hidden="true">🦷</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">SmileCare</span>
+              <span class="nav-logo-sub">Dental Clinic</span>
+            </div>
+          </a>
+          <p>Premium dental care delivered with precision, compassion, and the latest technology. Your smile is our finest work.</p>
+          <div class="footer-hours">
+            <span class="footer-hours-dot" aria-hidden="true"></span>
+            Mon–Sat 9am–7pm · Sun 10am–2pm
+          </div>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/team.html">Our Doctors</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/smile.html">Smile Results</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/dental-tourism.html">Dental Tourism</a></li>
+            <li><a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20SmileCare%20Dental%20Clinic%2C%20Chandigarh.%20Please%20let%20me%20know%20available%20slots.%20Thank%20you!" target="_blank" rel="noopener">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Treatments</h4>
+          <ul>
+            <li><a href="pages/treatments.html#whitening">Teeth Whitening</a></li>
+            <li><a href="pages/treatments.html#implants">Dental Implants</a></li>
+            <li><a href="pages/treatments.html#braces">Braces &amp; Aligners</a></li>
+            <li><a href="pages/treatments.html#veneers">Porcelain Veneers</a></li>
+            <li><a href="pages/treatments.html#rootcanal">Root Canal</a></li>
+            <li><a href="pages/treatments.html#laser">Laser Dentistry</a></li>
+            <li><a href="pages/treatments.html#pediatric">Pediatric Dental</a></li>
+            <li><a href="pages/treatments.html#preventive">Preventive Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">📍</span>
+            <span class="footer-contact-text">47 Sector 22, Near PGI,<br>Chandigarh – 160 022</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">📞</span>
+            <span class="footer-contact-text"><a href="tel:+919876543210">+91 98765 43210</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">✉️</span>
+            <span class="footer-contact-text"><a href="mailto:hello@smilecare.in">hello@smilecare.in</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">🕐</span>
+            <span class="footer-contact-text">Mon–Sat: 9:00am – 7:00pm<br>Sunday: 10:00am – 2:00pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 SmileCare Dental Clinic, Chandigarh. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+        <script src="bundle.js"></script>
+</body>
+</html>
